@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/static/Inter-Bold.ttf");
+  font-weight: 700;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+p {
+  all: unset;
+}
+
+body {
+  --custom-green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  font-size: 14px;
+  font-family: "Inter";
+  background-color: var(--grey-900);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 10px;
+  background-color: var(--grey-800);
+  gap: 1.5rem;
+  width: 20%;
+}
+
+img {
+  width: 35%;
+  border-radius: 100%;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.author-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.author-address {
+    color: var(--custom-green);
+    font-weight: 600;
+}
+
+footer,ul,li,button {
+    width: 100%;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 0.7rem;
+}
+
+button {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--grey-700);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Inter";
+}
+
+button:hover{
+    color: var(--grey-800);
+    background-color: var(--custom-green);
+}
